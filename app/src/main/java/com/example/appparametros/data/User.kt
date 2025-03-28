@@ -5,8 +5,8 @@ data class User (
     val name: String,
     val avatarUrl: String?,
     val age: Int,
-    val score: Int,
-    val registerDate: String,
+    val serie: Int,
+    val birthDate: String,
     val email: String,
-    val bio: String
+    val message: String
 )

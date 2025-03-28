@@ -5,10 +5,10 @@ val userDefault = User(
     name = "AlunoDS",
     avatarUrl = null,
     age = 16,
-    score = 75,
-    registerDate = "27/03/2025",
+    serie = 3,
+    birthDate = "27/03/2025",
     email = "aluno@etec.sp.gov.br",
-    bio = "Estou aprendendo a passar parâmetros no Jetpack Compose."
+    message = "Estou criando um aplicativo com passagem de parâmetros"
 )
 
 val marcelo = User(
@@ -16,10 +16,10 @@ val marcelo = User(
     name = "Marcelo",
     avatarUrl = null,
     age = 51,
-    score = 90,
-    registerDate = "15/06/1973",
+    serie = 90,
+    birthDate = "15/06/1973",
     email = "marcelo.collado@etec.sp.gov.br",
-    bio = "Passei os parâmetros no Jetpack Compose."
+    message = "Passei os parâmetros no Jetpack Compose."
 )
 
 fun getUserData(userName: String): User {

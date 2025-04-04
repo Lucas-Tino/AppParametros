@@ -34,6 +34,7 @@ import com.example.appparametros.R
 import com.example.appparametros.data.User
 import com.example.appparametros.ui.theme.AppParametrosTheme
 import com.example.appparametros.ui.theme.GreenMid
+import com.example.appparametros.data.userDefault
 
 
 @SuppressLint("DiscouragedApi")
@@ -79,7 +80,7 @@ fun HomeScreen(user: User) {
                 )
 
                 Text(
-                    text = "Mensagem: \"${user.message}\"",
+                    text = "\"${user.message}\"",
                     modifier = Modifier
                         .padding(top = 16.dp)
                         .padding(horizontal = 24.dp),
@@ -125,6 +126,6 @@ fun HomeScreen(user: User) {
 @Composable
 fun HomeScreenPreview() {
     AppParametrosTheme {
-        LoginScreen(navController = rememberNavController())
+        HomeScreen(user = userDefault)
     }
 }

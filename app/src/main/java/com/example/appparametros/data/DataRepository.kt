@@ -8,10 +8,10 @@ val userDefault = User(
     name = "AlunoDS",
     avatarUrl = "avatar",
     age = 16,
-    serie = 3,
+    serie = 1,
     birthDate = "27/03/2025",
     email = "aluno@etec.sp.gov.br",
-    message = "Estou criando um aplicativo com passagem de parâmetros"
+    message = "Ainda não sei o que é um aplicativo com passagem de parâmetros"
 )
 
 val lucas = User(
@@ -22,7 +22,7 @@ val lucas = User(
     serie = 3,
     birthDate = "03/04/2007",
     email = "lucas.rosa@etec.sp.gov.br",
-    message = "Passei os parâmetros no Jetpack Compose."
+    message = "Estou criando um aplicativo com passagem de parâmetros"
 )
 
 val tino = User(
@@ -30,28 +30,15 @@ val tino = User(
     name = "Tino",
     avatarUrl = "vig",
     age = 17,
-    serie = 3,
+    serie = 2,
     birthDate = "04/03/2008",
     email = "tino.rosa@etec.sp.gov.br",
-    message = "Passei os parâmetros no Jetpack Compose."
-)
-
-val marcelo = User(
-    userId = "Marcelo",
-    name = "Marcelo",
-    avatarUrl = "marcelo",
-    age = 51,
-    serie = 90,
-    birthDate = "15/06/1973",
-    email = "marcelo.collado@etec.sp.gov.br",
-    message = "Passei os parâmetros no Jetpack Compose."
+    message = "Vou criar um aplicativo com passagem de parâmetros"
 )
 
 fun getUserData(userName: String): User {
     val lowercaseName = userName.toLowerCase(Locale.ROOT)
-    return if (lowercaseName == "marcelo") {
-        marcelo
-    } else if (lowercaseName == "lucas") {
+    return if (lowercaseName == "lucas") {
         lucas
     } else if (lowercaseName == "tino") {
         tino

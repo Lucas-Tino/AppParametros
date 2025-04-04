@@ -22,7 +22,7 @@ fun SetupNavGraph(navController: NavHostController) {
                 nullable = true
             }
         )) {
-            HomeRoute(userName = it.arguments?.getString(USER) ?: "")
+            HomeRoute(userName = it.arguments?.getString(USER) ?: "", navController = navController)
         }
     }
 }
